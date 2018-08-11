@@ -21,6 +21,7 @@ class FriendDetailVC: UIViewController, UITextViewDelegate, MKMapViewDelegate {
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     let friendDetailView = FriendDetailView(frame: UIScreen.main.bounds)
     friendDetailView.name.text = "Name : \(friend.name!)"
+    friendDetailView.imageView.imageFromServerURL(urlString: friend.picture)
     view = friendDetailView
     friendDetailView.map.delegate = self
     friendDetailView.map.addAnnotation(FriendCoordinate(name: friend.name, lat: Double(friend.latitude!)!, long: Double(friend.longitude!)!))

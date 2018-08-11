@@ -65,8 +65,6 @@
 		2736C026211EF23D00091430 /* FriendCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736C01C211EF23D00091430 /* FriendCoordinate.swift */; };
 		2736C027211EF23D00091430 /* FriendCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736C01C211EF23D00091430 /* FriendCoordinate.swift */; };
 		2736C028211EF23D00091430 /* FriendCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736C01C211EF23D00091430 /* FriendCoordinate.swift */; };
-		2736C02C211EF25200091430 /* FriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736C02A211EF25200091430 /* FriendTests.swift */; };
-		2736C02D211EF25200091430 /* FriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736C02A211EF25200091430 /* FriendTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +113,6 @@
 		2736C01A211EF23C00091430 /* FriendBrowseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendBrowseView.swift; sourceTree = "<group>"; };
 		2736C01B211EF23C00091430 /* FriendDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 		2736C01C211EF23D00091430 /* FriendCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCoordinate.swift; sourceTree = "<group>"; };
-		2736C02A211EF25200091430 /* FriendTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTests.swift; sourceTree = "<group>"; };
 		2736C030211EF2C700091430 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -169,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				2736C02E211EF26300091430 /* Application_Class */,
-				2736C029211EF24300091430 /* Unit_Tests */,
 				2736C018211EF22F00091430 /* Views */,
 				2736C003211EF21700091430 /* Models */,
 				2736BFEE211EF20200091430 /* Misc */,
@@ -250,14 +246,6 @@
 				2736C01B211EF23C00091430 /* FriendDetailView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		2736C029211EF24300091430 /* Unit_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2736C02A211EF25200091430 /* FriendTests.swift */,
-			);
-			path = Unit_Tests;
 			sourceTree = "<group>";
 		};
 		2736C02E211EF26300091430 /* Application_Class */ = {
@@ -432,7 +420,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2736BFDD211EF1DF00091430 /* WebserviceManager.swift in Sources */,
-				2736C02C211EF25200091430 /* FriendTests.swift in Sources */,
 				2736C021211EF23D00091430 /* FriendBrowseView.swift in Sources */,
 				2736BFFB211EF20E00091430 /* NSLayoutConstraintExtension.swift in Sources */,
 				2736BFE9211EF1F700091430 /* FriendDetailVC.swift in Sources */,
@@ -459,7 +446,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2736BFDE211EF1DF00091430 /* WebserviceManager.swift in Sources */,
-				2736C02D211EF25200091430 /* FriendTests.swift in Sources */,
 				2736C022211EF23D00091430 /* FriendBrowseView.swift in Sources */,
 				2736BFFC211EF20E00091430 /* NSLayoutConstraintExtension.swift in Sources */,
 				2736BFEA211EF1F700091430 /* FriendDetailVC.swift in Sources */,

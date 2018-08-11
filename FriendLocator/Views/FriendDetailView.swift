@@ -79,10 +79,10 @@ class FriendDetailView: UIView, CLLocationManagerDelegate  {
         map.bottomAnchor.constraint(equalTo: name.topAnchor, constant: -Padding.standard).activate()
         map.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor, constant: 2).activate()
         map.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor, constant: 2).activate()
-        map.widthAnchor.constraint(equalTo: (self.widthAnchor), constant: -(0.1 * Screen.width)).activate()
-        map.heightAnchor.constraint(equalTo: (self.heightAnchor), constant: -(0.4 * Screen.height)).activate()
+        map.widthAnchor.constraint(equalTo: (self.widthAnchor), constant: -(0.1 * ScreenDimensions.width)).activate()
+        map.heightAnchor.constraint(equalTo: (self.heightAnchor), constant: -(0.4 * ScreenDimensions.height)).activate()
         
-        imageView.topAnchor.constraint(equalTo: map.bottomAnchor, constant: Padding.standard/4).activate()
+        imageView.topAnchor.constraint(equalTo: map.bottomAnchor, constant: Padding.standard).activate()
         imageView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor, constant: Padding.standard/8).activate()
         imageView.trailingAnchor.constraint(equalTo: name.leadingAnchor, constant: -Padding.standard/2).activate()
     

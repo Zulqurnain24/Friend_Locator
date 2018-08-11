@@ -55,8 +55,9 @@ class FriendBrowseVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     cell.contentView.backgroundColor = Colors.lightGray
     cell.backgroundColor = Colors.lightGray
     
-    let whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:0, width:self.view.frame.size.width - 5, height:FriendCell.thumbnailHeightWidth - 5))
-    
+    let whiteRoundedView : UIView = UIView(frame: CGRect(x:5, y:5, width:cell.frame.size.width + 18, height:FriendCell.thumbnailHeightWidth - 5))
+    whiteRoundedView.layer.borderColor = Colors.blackish.cgColor
+     whiteRoundedView.layer.borderWidth = 1.0
     whiteRoundedView.layer.backgroundColor = Colors.white.cgColor
     whiteRoundedView.layer.masksToBounds = false
     

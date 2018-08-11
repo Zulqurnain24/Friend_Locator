@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Screen {
+struct ScreenDimensions {
     static let screenSize:CGRect = UIScreen.main.bounds
     static let width:CGFloat = screenSize.width
     static let height:CGFloat = screenSize.height
