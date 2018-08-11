@@ -1,0 +1,26 @@
+//
+//  Colors.swift
+//
+//  Created by Mohammad Zulqurnain on 09/08/18.
+//  Copyright © 2018 Mohammad Zulqurnain. All rights reserved.
+//
+
+import UIKit
+
+public struct Colors {
+  static let white = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+  static let lightGray = UIColor(red: 193/255, green: 193/255, blue: 193/255, alpha: 1.0)
+  static let blackish = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+  static let reddish = UIColor(red: 209/255, green: 102/255, blue: 102/255, alpha: 1.0)
+  static let greenish = UIColor(red: 182/255, green: 198/255, blue: 73/255, alpha: 1.0)
+  static let clear = UIColor.clear
+    
+  static func changeDefaults() {
+    UINavigationBar.appearance().tintColor = reddish
+    UINavigationBar.appearance().backItem?.backBarButtonItem?.tintColor = reddish
+    UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: blackish, NSAttributedStringKey.font: Fonts.heading]
+    _ = [.normal, .selected].map {
+      UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.clear , NSAttributedStringKey.font: Fonts.button], for: $0)
+    }
+  }
+}
